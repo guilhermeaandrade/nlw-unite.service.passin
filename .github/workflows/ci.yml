@@ -31,3 +31,5 @@ jobs:
     - name: Push image
       run: |
         docker push guilhermeandradedev/nlw.service.passin:${{ steps.generate_sha.outputs.sha }}
+        docker tag guilhermeandradedev/nlw.service.passin:${{ steps.generate_sha.outputs.sha }} guilhermeandradedev/nlw.service.passin:latest
+        docker push guilhermeandradedev/nlw.service.passin:latest
