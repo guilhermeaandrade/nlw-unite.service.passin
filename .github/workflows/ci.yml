@@ -40,7 +40,7 @@ jobs:
           branch: main
           valueFile: "deploy/values.yaml"
           propertyPath: "image.tag"
-          value: ${{ steps.generate_sha.outputs.sha }}
+          value: "${{ steps.generate_sha.outputs.sha }}"
           commitChange: true
           createPR: false
           message: "new: updated tag in values helm"
