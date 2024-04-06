@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: guilhermeandradedev/nlw.service.passin
   pullPolicy: Always
-  tag: b1a556a
+  tag: 3c40975
   port: 3333
 configMap:
   name: nlw-env
